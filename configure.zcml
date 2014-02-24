@@ -1,0 +1,18 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:five="http://namespaces.zope.org/five"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  i18n_domain="tarragona.semic.plonecourse">
+
+    <include package="plone.app.portlets" />
+
+    <plone:portlet
+        name="portlets.TarragonPortlet"
+        interface=".ITarragonaPortlet"
+        assignment=".Assignment"
+        renderer=".Renderer"
+        edit_permission="plone.app.portlets.ManagePortlets"
+        view_permission="zope2.View"
+        />
+
+</configure>

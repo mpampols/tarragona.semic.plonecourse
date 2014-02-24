@@ -1,0 +1,18 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+  xmlns:metal="http://xml.zope.org/namespaces/metal"
+  tal:omit-tag=""
+  i18n:domain="tarragona.semic.plonecourse">
+
+<dl class="portlet portletRecent">
+
+    <dt class="portletHeader" tal:condition="view/data/label|nothing">
+        <a tal:content="view/data/label"
+           tal:attributes="href string:${view/context/absolute_url}"/>
+    </dt>
+
+    <dd class="portletItem">
+        <span>It works!</span>
+    </dd>
+
+</dl>
+</html>
